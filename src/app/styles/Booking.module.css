@@ -1,0 +1,97 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #004080; 
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .intro {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+  }
+  
+  .bookingSteps {
+    margin-bottom: 2.5rem;
+  }
+  
+  .subTitle {
+    font-size: 2rem;
+    color: #004080;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .stepsList {
+    list-style-type: decimal;
+    margin-left: 2rem;
+  }
+  
+  .step {
+    margin-bottom: 1.5rem;
+  }
+  
+  .stepTitle {
+    font-size: 1.5rem;
+    color: #004080;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stepDescription {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .cta {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #004080;
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .subTitle {
+      font-size: 1.7rem;
+    }
+  
+    .stepTitle {
+      font-size: 1.4rem;
+    }
+  }
+  
+
+  .button {
+    background-color: #004080; 
+    color: #fff; 
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    display: block; 
+    margin: 1rem auto; 
+    max-width: 200px; 
+}
+
+.button:hover {
+  background-color: #ffcc00;
+    color: #004080; 
+}
+  
+
+   

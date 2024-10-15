@@ -1,0 +1,89 @@
+ .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #004080; 
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #555; 
+    margin-bottom: 2rem;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.serviceCard {
+    background-color: #f0f0f5;
+    border-radius: 20px;
+    padding: 1.5rem;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.serviceCard:hover {
+    transform: translateY(-5px); 
+}
+
+.serviceTitle {
+    font-size: 1.5rem;
+    color: #004080; 
+    margin-bottom: 1rem;
+}
+
+.serviceDescription {
+    font-size: 1rem;
+    color: #666;
+}
+
+.cta {
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    color: #004080;
+    font-weight: bold;
+}
+
+.cta strong {
+    color: #ffcc00; 
+}
+
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .serviceCard {
+        max-width: 100%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .cta {
+        font-size: 1rem;
+    }
+}

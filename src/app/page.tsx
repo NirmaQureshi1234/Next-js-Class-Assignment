@@ -1,95 +1,73 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Image from 'next/image';
+import styles from '@/app/styles/Home.module.css';
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <section className={styles.container}>  
+      <h1 className={styles.title}>Welcome to Travel Explore Agency</h1>
+      <p className={styles.description}>
+        At Travel Explore Agency, we make your travel dreams come true by offering comprehensive travel solutions. Our experienced team provides you with tailor-made travel services in:
+      </p>
+      <div className={styles.services}>
+        <div className={styles.serviceCard}>
+          <Image
+              className="object-cover object-center  rounded mx-auto w-[300px] h-[400px]"
+              alt="Destination Planning"
+              src="/distination.jpg"
+              width={150}
+              height={150}
+          />
+          <h3 className={styles.serviceTitle}>Destination Planning</h3>
+          <p className={styles.serviceDescription}>
+            Discover the perfect destinations tailored to your preferences and travel style.
+          </p>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <div className={styles.serviceCard}>
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+              className="object-cover object-center rounded mx-auto w-[300px] h-[400px]"
+              alt="Travel Packages"
+              src="/traval.jpg"
+              width={150}
+              height={150}
           />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          <h3 className={styles.serviceTitle}>Customized Travel Packages</h3>
+          <p className={styles.serviceDescription}>
+            Enjoy personalized travel packages that include flights, hotels, and activities at the best prices.
+          </p>
+        </div>
+        <div className={styles.serviceCard}>
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+              className="object-cover object-center rounded mx-auto w-[300px] h-[400px]"
+              alt="Hotel Booking"
+              src="/hotal.jpg"
+              width={150}
+              height={150}
           />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          <h3 className={styles.serviceTitle}>Hotel Booking</h3>
+          <p className={styles.serviceDescription}>
+            Book the best hotels worldwide with exclusive deals for your stay.
+          </p>
+        </div>
+        <div className={styles.serviceCard}>
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+              className="object-cover object-center rounded mx-auto w-[300px] h-[400px]"
+              alt="Travel Consultancy"
+              src="/consulting.jpg"
+              width={150}
+              height={150}
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          <h3 className={styles.serviceTitle}>Travel Consultancy</h3>
+          <p className={styles.serviceDescription}>
+            Get expert travel advice and support throughout your journey for a stress-free experience.
+          </p>
+        </div>
+      </div>
+      <p className={styles.cta}>
+        Ready to plan your dream vacation? <strong>Contact us today!</strong>
+      </p> 
+      <h1>⭐🌙Created By NIRMA QURESHI</h1>
+    </section>
   );
-}
+};
+
+export default Home;
